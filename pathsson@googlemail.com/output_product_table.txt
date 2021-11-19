@@ -1,0 +1,6 @@
+ id |  name  | price 
+----+--------+-------
+  1 | Marker |    10
+  2 | Paper  |     5
+(2 rows)
+
