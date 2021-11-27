@@ -1,0 +1,575 @@
+Retrieves details about the read replica
+{
+    "DBInstances": [
+        {
+            "PubliclyAccessible": false, 
+            "MasterUsername": "postgres", 
+            "PerformanceInsightsRetentionPeriod": 7, 
+            "MonitoringInterval": 0, 
+            "LicenseModel": "postgresql-license", 
+            "VpcSecurityGroups": [
+                {
+                    "Status": "active", 
+                    "VpcSecurityGroupId": "sg-07aa6227b1275ef96"
+                }
+            ], 
+            "InstanceCreateTime": "2021-11-27T10:48:41.918Z", 
+            "CopyTagsToSnapshot": false, 
+            "OptionGroupMemberships": [
+                {
+                    "Status": "in-sync", 
+                    "OptionGroupName": "default:postgres-13"
+                }
+            ], 
+            "PendingModifiedValues": {}, 
+            "Engine": "postgres", 
+            "MultiAZ": false, 
+            "DBSecurityGroups": [], 
+            "DBParameterGroups": [
+                {
+                    "DBParameterGroupName": "default.postgres13", 
+                    "ParameterApplyStatus": "in-sync"
+                }
+            ], 
+            "PerformanceInsightsEnabled": true, 
+            "ReadReplicaSourceDBInstanceIdentifier": "arn:aws:rds:eu-west-3:349613135469:db:assign29dbinstance", 
+            "AutoMinorVersionUpgrade": true, 
+            "PreferredBackupWindow": "09:47-10:17", 
+            "DBSubnetGroup": {
+                "Subnets": [
+                    {
+                        "SubnetStatus": "Active", 
+                        "SubnetIdentifier": "subnet-00cc66732f1a9e1ca", 
+                        "SubnetOutpost": {}, 
+                        "SubnetAvailabilityZone": {
+                            "Name": "us-east-1a"
+                        }
+                    }, 
+                    {
+                        "SubnetStatus": "Active", 
+                        "SubnetIdentifier": "subnet-05edb584da1fa3644", 
+                        "SubnetOutpost": {}, 
+                        "SubnetAvailabilityZone": {
+                            "Name": "us-east-1b"
+                        }
+                    }
+                ], 
+                "DBSubnetGroupName": "subnetgroup-rds-virginia", 
+                "VpcId": "vpc-0510ebc34d960034b", 
+                "DBSubnetGroupDescription": "DB subnet group in N. Virginia", 
+                "SubnetGroupStatus": "Complete"
+            }, 
+            "ReadReplicaDBInstanceIdentifiers": [], 
+            "AllocatedStorage": 20, 
+            "DBInstanceArn": "arn:aws:rds:us-east-1:349613135469:db:assign29dbinstancevirginia", 
+            "BackupRetentionPeriod": 0, 
+            "PreferredMaintenanceWindow": "fri:01:57-fri:02:27", 
+            "Endpoint": {
+                "HostedZoneId": "Z2R2ITUGPM61AM", 
+                "Port": 5432, 
+                "Address": "assign29dbinstancevirginia.clcnfdtgvxis.us-east-1.rds.amazonaws.com"
+            }, 
+            "DBInstanceStatus": "available", 
+            "PerformanceInsightsKMSKeyId": "arn:aws:kms:us-east-1:349613135469:key/c6bc3a66-fcf1-459e-8a61-821b745c2aab", 
+            "IAMDatabaseAuthenticationEnabled": false, 
+            "EngineVersion": "13.3", 
+            "DeletionProtection": false, 
+            "StatusInfos": [
+                {
+                    "Status": "replicating", 
+                    "StatusType": "read replication", 
+                    "Normal": true
+                }
+            ], 
+            "AvailabilityZone": "us-east-1a", 
+            "DomainMemberships": [], 
+            "StorageType": "gp2", 
+            "DbiResourceId": "db-7FHA7U3TEWY7OQUUYQKSF4T7OQ", 
+            "CACertificateIdentifier": "rds-ca-2019", 
+            "KmsKeyId": "arn:aws:kms:us-east-1:349613135469:key/c6bc3a66-fcf1-459e-8a61-821b745c2aab", 
+            "StorageEncrypted": true, 
+            "AssociatedRoles": [], 
+            "DBInstanceClass": "db.t3.micro", 
+            "DbInstancePort": 0, 
+            "DBInstanceIdentifier": "assign29dbinstancevirginia"
+        }
+    ]
+}
+Retrieves details about RDS instance in Paris
+{
+    "DBInstances": [
+        {
+            "PubliclyAccessible": false, 
+            "MasterUsername": "postgres", 
+            "MonitoringInterval": 60, 
+            "LicenseModel": "postgresql-license", 
+            "VpcSecurityGroups": [
+                {
+                    "Status": "active", 
+                    "VpcSecurityGroupId": "sg-0e3c6d6b953d38a4b"
+                }
+            ], 
+            "InstanceCreateTime": "2021-11-26T20:02:18.680Z", 
+            "CopyTagsToSnapshot": true, 
+            "OptionGroupMemberships": [
+                {
+                    "Status": "in-sync", 
+                    "OptionGroupName": "default:postgres-13"
+                }
+            ], 
+            "PendingModifiedValues": {}, 
+            "Engine": "postgres", 
+            "MultiAZ": false, 
+            "LatestRestorableTime": "2021-11-27T12:05:35Z", 
+            "DBSecurityGroups": [], 
+            "DBParameterGroups": [
+                {
+                    "DBParameterGroupName": "default.postgres13", 
+                    "ParameterApplyStatus": "in-sync"
+                }
+            ], 
+            "PerformanceInsightsEnabled": true, 
+            "PerformanceInsightsRetentionPeriod": 7, 
+            "AutoMinorVersionUpgrade": true, 
+            "PreferredBackupWindow": "09:47-10:17", 
+            "DBSubnetGroup": {
+                "Subnets": [
+                    {
+                        "SubnetStatus": "Active", 
+                        "SubnetIdentifier": "subnet-0b282a5c6f178427c", 
+                        "SubnetOutpost": {}, 
+                        "SubnetAvailabilityZone": {
+                            "Name": "eu-west-3b"
+                        }
+                    }, 
+                    {
+                        "SubnetStatus": "Active", 
+                        "SubnetIdentifier": "subnet-03cd0f7dc66799488", 
+                        "SubnetOutpost": {}, 
+                        "SubnetAvailabilityZone": {
+                            "Name": "eu-west-3a"
+                        }
+                    }
+                ], 
+                "DBSubnetGroupName": "subnetgroup-rds-paris", 
+                "VpcId": "vpc-0a4730360e7f0d904", 
+                "DBSubnetGroupDescription": "DB subnet group in Paris", 
+                "SubnetGroupStatus": "Complete"
+            }, 
+            "ReadReplicaDBInstanceIdentifiers": [
+                "arn:aws:rds:us-east-1:349613135469:db:assign29dbinstancevirginia"
+            ], 
+            "AllocatedStorage": 20, 
+            "DBInstanceArn": "arn:aws:rds:eu-west-3:349613135469:db:assign29dbinstance", 
+            "BackupRetentionPeriod": 7, 
+            "PreferredMaintenanceWindow": "fri:01:57-fri:02:27", 
+            "Endpoint": {
+                "HostedZoneId": "ZMESEXB7ZGGQ3", 
+                "Port": 5432, 
+                "Address": "assign29dbinstance.cf8jr6wiqsrs.eu-west-3.rds.amazonaws.com"
+            }, 
+            "DBInstanceStatus": "modifying", 
+            "PerformanceInsightsKMSKeyId": "arn:aws:kms:eu-west-3:349613135469:key/686e35ce-4962-47ce-8501-8ade1f5feb34", 
+            "IAMDatabaseAuthenticationEnabled": false, 
+            "EngineVersion": "13.3", 
+            "EnhancedMonitoringResourceArn": "arn:aws:logs:eu-west-3:349613135469:log-group:RDSOSMetrics:log-stream:db-ZDZL7P6NXMI2IIBKRDQTBGD5IE", 
+            "DeletionProtection": false, 
+            "AvailabilityZone": "eu-west-3a", 
+            "DomainMemberships": [], 
+            "MonitoringRoleArn": "arn:aws:iam::349613135469:role/rds-monitoring-role", 
+            "StorageType": "gp2", 
+            "DbiResourceId": "db-ZDZL7P6NXMI2IIBKRDQTBGD5IE", 
+            "CACertificateIdentifier": "rds-ca-2019", 
+            "KmsKeyId": "arn:aws:kms:eu-west-3:349613135469:key/686e35ce-4962-47ce-8501-8ade1f5feb34", 
+            "StorageEncrypted": true, 
+            "AssociatedRoles": [], 
+            "DBInstanceClass": "db.t3.micro", 
+            "DbInstancePort": 0, 
+            "DBInstanceIdentifier": "assign29dbinstance"
+        }
+    ]
+}
+Describes instances
+{
+    "Reservations": [
+        {
+            "Instances": [
+                {
+                    "Monitoring": {
+                        "State": "disabled"
+                    }, 
+                    "PublicDnsName": "", 
+                    "State": {
+                        "Code": 16, 
+                        "Name": "running"
+                    }, 
+                    "EbsOptimized": true, 
+                    "LaunchTime": "2021-11-27T10:01:35.000Z", 
+                    "PublicIpAddress": "34.237.140.63", 
+                    "PrivateIpAddress": "10.150.0.153", 
+                    "ProductCodes": [], 
+                    "VpcId": "vpc-0510ebc34d960034b", 
+                    "CpuOptions": {
+                        "CoreCount": 1, 
+                        "ThreadsPerCore": 2
+                    }, 
+                    "StateTransitionReason": "", 
+                    "InstanceId": "i-0df016b3cd9b86279", 
+                    "EnaSupport": true, 
+                    "ImageId": "ami-04ad2567c9e3d7893", 
+                    "PrivateDnsName": "ip-10-150-0-153.ec2.internal", 
+                    "KeyName": "VirginiaAssign29KP", 
+                    "SecurityGroups": [
+                        {
+                            "GroupName": "ssh-only-sg", 
+                            "GroupId": "sg-05d62f34f5ea6a6a6"
+                        }
+                    ], 
+                    "ClientToken": "", 
+                    "SubnetId": "subnet-0d7a586c844e11b7a", 
+                    "InstanceType": "t3.micro", 
+                    "CapacityReservationSpecification": {
+                        "CapacityReservationPreference": "open"
+                    }, 
+                    "NetworkInterfaces": [
+                        {
+                            "Status": "in-use", 
+                            "MacAddress": "02:86:f7:ed:bf:49", 
+                            "SourceDestCheck": true, 
+                            "VpcId": "vpc-0510ebc34d960034b", 
+                            "Description": "Primary network interface", 
+                            "NetworkInterfaceId": "eni-09cc42e2531803810", 
+                            "PrivateIpAddresses": [
+                                {
+                                    "PrivateIpAddress": "10.150.0.153", 
+                                    "Primary": true, 
+                                    "Association": {
+                                        "PublicIp": "34.237.140.63", 
+                                        "PublicDnsName": "", 
+                                        "IpOwnerId": "amazon"
+                                    }
+                                }
+                            ], 
+                            "SubnetId": "subnet-0d7a586c844e11b7a", 
+                            "InterfaceType": "interface", 
+                            "Attachment": {
+                                "Status": "attached", 
+                                "DeviceIndex": 0, 
+                                "DeleteOnTermination": true, 
+                                "AttachmentId": "eni-attach-016bb0951765f4ac4", 
+                                "AttachTime": "2021-11-26T22:18:01.000Z"
+                            }, 
+                            "Groups": [
+                                {
+                                    "GroupName": "ssh-only-sg", 
+                                    "GroupId": "sg-05d62f34f5ea6a6a6"
+                                }
+                            ], 
+                            "Ipv6Addresses": [], 
+                            "OwnerId": "349613135469", 
+                            "PrivateIpAddress": "10.150.0.153", 
+                            "Association": {
+                                "PublicIp": "34.237.140.63", 
+                                "PublicDnsName": "", 
+                                "IpOwnerId": "amazon"
+                            }
+                        }
+                    ], 
+                    "SourceDestCheck": true, 
+                    "Placement": {
+                        "Tenancy": "default", 
+                        "GroupName": "", 
+                        "AvailabilityZone": "us-east-1a"
+                    }, 
+                    "Hypervisor": "xen", 
+                    "BlockDeviceMappings": [
+                        {
+                            "DeviceName": "/dev/xvda", 
+                            "Ebs": {
+                                "Status": "attached", 
+                                "DeleteOnTermination": true, 
+                                "VolumeId": "vol-0620414863c8a6d67", 
+                                "AttachTime": "2021-11-26T22:18:02.000Z"
+                            }
+                        }
+                    ], 
+                    "Architecture": "x86_64", 
+                    "RootDeviceType": "ebs", 
+                    "RootDeviceName": "/dev/xvda", 
+                    "VirtualizationType": "hvm", 
+                    "Tags": [
+                        {
+                            "Value": "assign29VirginiaClient", 
+                            "Key": "Name"
+                        }
+                    ], 
+                    "HibernationOptions": {
+                        "Configured": false
+                    }, 
+                    "MetadataOptions": {
+                        "State": "applied", 
+                        "HttpEndpoint": "enabled", 
+                        "HttpTokens": "optional", 
+                        "HttpPutResponseHopLimit": 1
+                    }, 
+                    "AmiLaunchIndex": 0
+                }
+            ], 
+            "ReservationId": "r-0bf3fdba2bc602329", 
+            "Groups": [], 
+            "OwnerId": "349613135469"
+        }
+    ]
+}
+Describes security group
+{
+    "SecurityGroups": [
+        {
+            "IpPermissionsEgress": [
+                {
+                    "IpProtocol": "-1", 
+                    "PrefixListIds": [], 
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ], 
+                    "UserIdGroupPairs": [], 
+                    "Ipv6Ranges": []
+                }
+            ], 
+            "Description": "default VPC security group", 
+            "IpPermissions": [
+                {
+                    "IpProtocol": "-1", 
+                    "PrefixListIds": [], 
+                    "IpRanges": [], 
+                    "UserIdGroupPairs": [
+                        {
+                            "UserId": "349613135469", 
+                            "GroupId": "sg-02e8485d549f8d624"
+                        }
+                    ], 
+                    "Ipv6Ranges": []
+                }
+            ], 
+            "GroupName": "default", 
+            "VpcId": "vpc-0510ebc34d960034b", 
+            "OwnerId": "349613135469", 
+            "GroupId": "sg-02e8485d549f8d624"
+        }, 
+        {
+            "IpPermissionsEgress": [
+                {
+                    "IpProtocol": "-1", 
+                    "PrefixListIds": [], 
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ], 
+                    "UserIdGroupPairs": [], 
+                    "Ipv6Ranges": []
+                }
+            ], 
+            "Description": "ssh-via-putty", 
+            "IpPermissions": [
+                {
+                    "PrefixListIds": [], 
+                    "FromPort": 22, 
+                    "IpRanges": [
+                        {
+                            "Description": "", 
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ], 
+                    "ToPort": 22, 
+                    "IpProtocol": "tcp", 
+                    "UserIdGroupPairs": [], 
+                    "Ipv6Ranges": []
+                }
+            ], 
+            "GroupName": "ssh-via-putty", 
+            "VpcId": "vpc-c01e6fbd", 
+            "OwnerId": "349613135469", 
+            "GroupId": "sg-035ac7d81eace5ae9"
+        }, 
+        {
+            "IpPermissionsEgress": [
+                {
+                    "IpProtocol": "-1", 
+                    "PrefixListIds": [], 
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ], 
+                    "UserIdGroupPairs": [], 
+                    "Ipv6Ranges": []
+                }
+            ], 
+            "Description": "ssh-only-sg", 
+            "IpPermissions": [
+                {
+                    "PrefixListIds": [], 
+                    "FromPort": 22, 
+                    "IpRanges": [
+                        {
+                            "Description": "", 
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ], 
+                    "ToPort": 22, 
+                    "IpProtocol": "tcp", 
+                    "UserIdGroupPairs": [], 
+                    "Ipv6Ranges": []
+                }
+            ], 
+            "GroupName": "ssh-only-sg", 
+            "VpcId": "vpc-0510ebc34d960034b", 
+            "OwnerId": "349613135469", 
+            "GroupId": "sg-05d62f34f5ea6a6a6"
+        }, 
+        {
+            "IpPermissionsEgress": [
+                {
+                    "IpProtocol": "-1", 
+                    "PrefixListIds": [], 
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ], 
+                    "UserIdGroupPairs": [], 
+                    "Ipv6Ranges": []
+                }
+            ], 
+            "Description": "allow connections to Amazon RDS instance", 
+            "IpPermissions": [
+                {
+                    "PrefixListIds": [], 
+                    "FromPort": 5432, 
+                    "IpRanges": [
+                        {
+                            "CidrIp": "10.150.0.0/24"
+                        }
+                    ], 
+                    "ToPort": 5432, 
+                    "IpProtocol": "tcp", 
+                    "UserIdGroupPairs": [], 
+                    "Ipv6Ranges": []
+                }
+            ], 
+            "GroupName": "psql-only-sg", 
+            "VpcId": "vpc-0510ebc34d960034b", 
+            "OwnerId": "349613135469", 
+            "GroupId": "sg-07aa6227b1275ef96"
+        }, 
+        {
+            "IpPermissionsEgress": [
+                {
+                    "IpProtocol": "-1", 
+                    "PrefixListIds": [], 
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ], 
+                    "UserIdGroupPairs": [], 
+                    "Ipv6Ranges": []
+                }
+            ], 
+            "Description": "rdp-only", 
+            "IpPermissions": [
+                {
+                    "PrefixListIds": [], 
+                    "FromPort": 3389, 
+                    "IpRanges": [
+                        {
+                            "Description": "", 
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ], 
+                    "ToPort": 3389, 
+                    "IpProtocol": "tcp", 
+                    "UserIdGroupPairs": [], 
+                    "Ipv6Ranges": []
+                }
+            ], 
+            "GroupName": "rdp-only", 
+            "VpcId": "vpc-c01e6fbd", 
+            "OwnerId": "349613135469", 
+            "GroupId": "sg-07e79637e887fa166"
+        }, 
+        {
+            "IpPermissionsEgress": [
+                {
+                    "IpProtocol": "-1", 
+                    "PrefixListIds": [], 
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ], 
+                    "UserIdGroupPairs": [], 
+                    "Ipv6Ranges": []
+                }
+            ], 
+            "Description": "ssh-only", 
+            "IpPermissions": [
+                {
+                    "PrefixListIds": [], 
+                    "FromPort": 22, 
+                    "IpRanges": [
+                        {
+                            "Description": "", 
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ], 
+                    "ToPort": 22, 
+                    "IpProtocol": "tcp", 
+                    "UserIdGroupPairs": [], 
+                    "Ipv6Ranges": []
+                }
+            ], 
+            "GroupName": "ssh-only", 
+            "VpcId": "vpc-c01e6fbd", 
+            "OwnerId": "349613135469", 
+            "GroupId": "sg-0d4e5bf9e9b189f90"
+        }, 
+        {
+            "IpPermissionsEgress": [
+                {
+                    "IpProtocol": "-1", 
+                    "PrefixListIds": [], 
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ], 
+                    "UserIdGroupPairs": [], 
+                    "Ipv6Ranges": []
+                }
+            ], 
+            "Description": "default VPC security group", 
+            "IpPermissions": [
+                {
+                    "IpProtocol": "-1", 
+                    "PrefixListIds": [], 
+                    "IpRanges": [], 
+                    "UserIdGroupPairs": [
+                        {
+                            "UserId": "349613135469", 
+                            "GroupId": "sg-9e95f581"
+                        }
+                    ], 
+                    "Ipv6Ranges": []
+                }
+            ], 
+            "GroupName": "default", 
+            "VpcId": "vpc-c01e6fbd", 
+            "OwnerId": "349613135469", 
+            "GroupId": "sg-9e95f581"
+        }
+    ]
+}
