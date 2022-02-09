@@ -1,0 +1,2 @@
+@@Retrieves details about the read replica
+“@@Retrieves details about the read replica”
